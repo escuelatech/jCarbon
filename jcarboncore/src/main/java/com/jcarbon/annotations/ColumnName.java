@@ -5,12 +5,9 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-/**
- * Features that are marked with this annotation are considered <em>Carbonbean</em>.
- *
- */
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.TYPE)
-public @interface CarbonBean {
-}
+@Target(ElementType.FIELD)
+public @interface ColumnName {
 
+    public String whenFieldName() default "";
+}
