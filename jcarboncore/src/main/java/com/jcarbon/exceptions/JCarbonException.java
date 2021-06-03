@@ -6,4 +6,9 @@ package com.jcarbon.exceptions;
  */
 public class JCarbonException extends RuntimeException{
 
+
+    public JCarbonException(String msg){
+        super(msg);
+    }
+
 }
