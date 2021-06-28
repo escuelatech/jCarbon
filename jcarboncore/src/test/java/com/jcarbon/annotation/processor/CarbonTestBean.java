@@ -3,6 +3,7 @@ package com.jcarbon.annotation.processor;
 import com.jcarbon.annotations.CarbonBean;
 import com.jcarbon.annotations.ColumnName;
 
+
 public class CarbonTestBean {
 
     @ColumnName
@@ -20,6 +21,8 @@ public class CarbonTestBean {
 
     @ColumnName
     Integer salary;
+
+    Boolean isCarbonTest;
 
     public String getUserName() {
         return userName;
@@ -59,5 +62,13 @@ public class CarbonTestBean {
 
     public void setSalary(Integer salary) {
         this.salary = salary;
+    }
+
+    public Boolean getCarbonTest() {
+        return isCarbonTest;
+    }
+
+    public void setCarbonTest(Boolean carbonTest) {
+        isCarbonTest = carbonTest;
     }
 }
